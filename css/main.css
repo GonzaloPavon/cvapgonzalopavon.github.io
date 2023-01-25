@@ -1,0 +1,38 @@
+@keyframes transitionIn {
+    from{
+      opacity: 0;
+      transform: translateX(-20px);
+    }
+    to{
+      opacity: 1;
+      transform: translateX(0px);
+    }
+}
+
+html{
+    scroll-behavior: smooth;
+    font-family: 'DotGothic16', sans-serif;
+    background-color: black;
+    color: springgreen;
+}
+.container{
+    width: 80%;
+    margin: 0px auto;
+}
+.center-text{
+  text-align: center;
+}
+.center{
+  margin: auto;
+}
+.align-left{
+  margin-left: auto;
+}
+.align-right{
+  margin-right: auto;
+}
+@media only screen and (max-width: 600px) {
+  .container{
+      width: 90%;
+  }
+}

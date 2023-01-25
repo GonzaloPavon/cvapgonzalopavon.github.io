@@ -1,0 +1,54 @@
+nav{
+    z-index: 4;
+    margin: 2rem;
+    background-color: black;
+    border: 4px solid springgreen;
+    width: 15%;
+}
+.navbar{
+    list-style: none;
+    padding: 0 2rem;
+}
+.navbar  a:visited,.navbar  a:active, .navbar  a:link{
+    text-decoration: none;
+    color: springgreen;
+}
+.navbar-button{
+    margin-left: 1rem;
+    border: none;
+    background-color: transparent;
+    font-size: 2rem;
+    color: springgreen;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+.sticky {
+    position: fixed;
+    left: 0;
+}
+.navbar-header{
+    display: flex;
+    background-color: rgba(4, 201, 102, 0.822);
+    border: 4px solid springgreen;
+    width: 100%;
+    height: 50px;
+    color: springgreen;
+}
+.navbar-header >h3{
+    margin: auto;
+}
+/*Mobile*/
+@media only screen and (max-width: 600px) {
+    nav{
+        width: max-content;
+        margin: 0.5rem;
+    }
+    #collapse-title{
+        display: none;
+    }
+    .navbar-button{
+        margin: 0px;
+    }
+} 

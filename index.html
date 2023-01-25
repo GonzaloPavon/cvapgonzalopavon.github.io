@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="/images/favicon.ico">
+    <title>Curriculum Vitae</title>
+    <link rel="icon" type="image/x-icon" href="favicon.ico" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DotGothic16&display=swap" rel="stylesheet"> 
+    <link rel="stylesheet" href="css/CssMaster.css">
+</head>
+<body>
+    <nav    class="sticky">
+        <div    id="showMenu"   class="navbar-header"><button   class="navbar-button"><span>≡</span></button><h3 id="collapse-title"> < Menu > </h3></div>
+        <div    id="hideMenu" style="display: none;" class="navbar-header"><button   class="navbar-button"><span>x</span></button><h3 > < Menu > </h3></div>       
+        <ul class="navbar" style="display: none;">
+            <li><a href="#home">> Inicio</a></li>
+            <li><a href="#about">> Sobre mi</a></li>
+            <li><a href="#study">> Formacion</a></li>
+            <li><a href="#experience">> Experiencia laboral</a></li>
+            <li><a href="#contact">> Contacto</a></li>
+        </ul>
+    </nav>
+    <main   class="container container-sections">
+        <div id="home" class="section">
+            <div    class="section-info-container center">
+                <h2 id="personal-name" class="oneLine-typewriteEffect"></h2>
+                <div    class="bit-image-container center"><div class="image-background"><img src="https://media.chambers.com/individuals/3058020/ae9ae272-d59e-485a-bcdd-ff42e7d8eaa4/profile.png" alt="imagen de perfil del CV" class="bit-image" id="profile-image"></div></div>
+            </div>
+            <br>
+            <ul class="section-info-container center" id="section-personal-info">
+                <li class="li-info">
+                    <p id="birthday-info"   class="oneLine-typewriteEffect"></p> 
+                </li>
+                <li class="li-info">
+                    <p id="location-info"   class="oneLine-typewriteEffect"></p>
+                </li>
+            </ul>
+        </div>
+        <div id="about" class="section">
+            <div    class="section-text center">
+                <h4 class="main-section-title">*** Sobre mi ***</h4>
+                <span id="about-paragraph" class="typing-animation main-section-text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</span><span class="blinking-uncerscore">_</span>
+            </div>
+        </div>
+        <div id="study" class="section">
+            <div    class="section-text align-right">
+                <h4 class="main-section-title">*** Formacion ***</h4>
+                <span id="tecnologies-paragraph" class="">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</span><span class="blinking-uncerscore">_</span>
+            </div>
+        </div>
+        <div id="experience"    class="section">
+            <div    class="section-text align-left">
+                <h4 class="main-section-title">*** Experiencia laboral ***</h4>
+                <span id="tecnologies-paragraph" class="">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</span><span class="blinking-uncerscore">_</span>
+            </div>
+        </div>
+        <br>
+        <div class="section-divider">******************************</div>
+        <div id="contact"   class="section">
+            <h4 class="center-text">CONTACTO</h4>
+            <div    class="section-text center">
+                <div    class="contact-info" style="text-indent: 0px;text-align: left;">
+                    <p><strong id="email-info"></strong></p>
+                    <p><strong id="phone-info"></strong></p>
+                    <p><strong id="location-contact-info"></strong></p>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer class="container">
+        > Diseñado y desarrollado para argentina programa por : Gonzalo Javier Pavon<span class="blinking-uncerscore">_</span>
+    </footer>
+    <script src="./js/navigation.js"></script>
+    <script src="./js/sections.js"></script>
+    <script src="./js/controllers.js"></script>
+</body>
+</html>

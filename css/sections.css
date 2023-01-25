@@ -1,0 +1,121 @@
+@import url(profileImg.css);
+.section{
+    margin: 2rem 0px;
+}
+.section-text{
+    width: 50%;
+    text-align: justify;
+    border: 4px solid springgreen;
+    padding: 2rem;
+    position: relative;
+    text-indent: 1.5em
+}
+.section-info-container{
+    list-style: none;
+    text-align: center;
+    padding: 0px;
+}
+.section-divider{
+    text-align: center;
+    margin: auto;
+}
+.main-section-title{
+    color: black;
+    text-align: center;
+    width: 100%;
+    margin: 0px auto;
+    position: absolute;
+    top: 0;
+    z-index: 2;
+    background-color: rgba(4, 201, 102, 0.822);
+    border: 4px solid springgreen;
+    left: 0;
+}
+.blinking-uncerscore {
+    animation: blinker 1.5s linear infinite;
+}
+#study > .section-text{
+    left: -800px;
+    animation: leftSlide 0.5s ease forwards;
+}
+#experience > .section-text{
+    right: -800px;
+    animation: rightSlide 0.5s ease forwards;
+}
+#contact > .section-text{
+    bottom: -800px;
+    animation: bottomSlide 0.5s ease forwards;
+}
+.oneLine-typewriteEffect{
+    overflow: hidden;
+    white-space: nowrap;
+    animation: 
+      typing 3.5s steps(20, end)
+}
+.li-info{
+    display: flex;
+    margin: 0px auto;
+}
+.li-info > p{
+    margin: 0px;
+}
+/*Animaciones*/
+@keyframes typing {
+    0% { width: 0}
+    100% { width: 100%}
+  }
+
+@keyframes leftSlide {
+    0% {}
+    70%{ transform: translateX(900px); }
+    100%{   transform: translateX(800px); }
+}
+@keyframes rightSlide {
+    0% {}
+    70%{ transform: translateX(-900px); }
+    100%{   transform: translateX(-800px); }
+}
+@keyframes bottomSlide {
+    0% {}
+    70%{ transform: translateY(-900px); }
+    100%{   transform: translateY(-800px); }
+}
+@keyframes blinker {
+    50% {
+        opacity: 0;
+    }
+}
+/*Mobile*/
+@media only screen and (min-width: 600px) {
+    .li-info{
+        display: flex;
+        margin: 0px auto;
+        width: max-content;
+    }
+    .section-info-container{
+        width: max-content;
+        list-style: none;
+        text-align: center;
+        padding: 0px;
+    }
+} 
+@media only screen and (max-width: 600px) {
+    .sticky{
+        top: 100px;
+    }
+    .section-text{
+        width: 75%;
+    }
+    .oneLine-typewriteEffect{
+        overflow: visible;
+        white-space: normal;
+        animation: 
+          typing 3.5s steps(20, end)
+    }
+    @keyframes typing {
+        0% { width: 0; overflow:hidden; white-space: nowrap;}
+        99% { width: 70%}
+        99% { width: 100%;overflow:visible; white-space: normal;}
+      }
+    
+} 

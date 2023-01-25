@@ -1,0 +1,18 @@
+.bit-image{
+    -webkit-filter: grayscale(100%) blur(1px) opacity(60%) brightness(var(--value, 1.6));
+    filter: grayscale(100%) blur(1px) opacity(60%) brightness(var(--value, 1.6));
+    max-width: 150px;
+    max-height: 200px;
+}
+.bit-image-container{
+    width: max-content;
+    height: max-content;
+    border:  4px double springgreen;
+    padding: 1rem;
+}
+.image-background{
+    height: max-content;
+    width: max-content;
+    background: linear-gradient(to right, springgreen, rgba(0, 255, 128, 30%)), url(https://thumbs.dreamstime.com/b/grey-noise-texture-illustration-divulgue-la-textura-bacground-disponible-en-el-jpeg-de-alta-resoluci%C3%B3n-116732588.jpg);
+    box-shadow: 2px 3px 3px 2px rgb(113, 248, 180);
+}
